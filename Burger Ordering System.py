@@ -122,7 +122,7 @@ class Order:
         print("")
         print("   WELCOME TO GJAY BURGER HOUSE ")
         while True:
-            print("\nPICK TRANSACTION!!!!\n1. MUNE\n2. ORDER\n3. REMOVE\n4. SEE YOUR ORDER\n5. NO SAVE BILL and SAVE BILL") 
+            print("\nPICK TRANSACTION!!!!\n0. EXIT\n1. MUNE\n2. ORDER\n3. REMOVE\n4. SEE YOUR ORDER\n5. NO SAVE BILL and SAVE BILL") 
             TRANS = input("\nPICK YOUR TRANSACTION: ")
             print("")
             if TRANS == "1":
@@ -133,6 +133,9 @@ class Order:
                 self.remove()
             elif TRANS == "4":
                 self.your_item()
+            elif TRANS == "0":
+                print("THANK U......................")
+                quit()       
             while TRANS == "5":
                 print("(NO SAVE) OR (SAVE)")
                 PICK = input("\nPICK YOUR BILL TANSACTION: ").lower()
