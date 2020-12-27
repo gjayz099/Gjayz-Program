@@ -73,7 +73,7 @@ class Order:
 
     #SEE YOUR ITEM MENU
     def your_item(self):
-        print("""\t\tTHIS IS YOUR ORDER!!!!!!\n                NAME               Price         QTY""")
+        print("""\t\tTHIS IS YOUR ORDER!!!!!!\nCODE            NAME               Price         QTY""")
         for k, v in self.order_dict.items():
             if v[2] != 0:
                 print(v[0],"\u20B1{m}".format(m="%.2f" % (v[1] * v[2])), "\t",v[2])
