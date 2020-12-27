@@ -76,7 +76,7 @@ class Order:
         print("""\t\tTHIS IS YOUR ORDER!!!!!!\nCODE            NAME               Price         QTY""")
         for k, v in self.order_dict.items():
             if v[2] != 0:
-                print(v[0],"\u20B1{m}".format(m="%.2f" % (v[1] * v[2])), "\t",v[2])
+                print(k, v[0],"\u20B1{m}".format(m="%.2f" % (v[1] * v[2])), "\t",v[2])
   
     #DISPLAY BILL NO SAVE
     def no_save_bill(self):
