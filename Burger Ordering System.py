@@ -6,7 +6,6 @@ import datetime
 
 class Order:
 
-    TAX_RATE = 0.09
 
     def __init__(self):
         self.order_dict = {
